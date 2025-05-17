@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html" class="active">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Entertainment</h1>
+                    <p>Stay updated with the latest in movies, music, television, celebrity news, and pop culture.</p>
+                </div>
+            </section>
+
+            <!-- Trending Now -->
+            <section class="live-scores">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Trending Now</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="scores-slider">
+                        <div class="score-card">
+                            <div class="match-type">Box Office</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="https://i.pinimg.com/736x/4a/6c/b8/4a6cb81fac408b805d4cc41bc73f50c2.jpg" alt="Movie Poster" class="team-logo">
+                                    <span class="team-name">Avengers: Secret Wars</span>
+                                    <span class="team-score">$125M</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Opening Weekend</div>
+                        </div>
+                        <div class="score-card">
+                            <div class="match-type">Music Charts</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="https://i.pinimg.com/736x/e1/64/72/e16472e3c301780e35da80e50d448473.jpg" alt="Album Cover" class="team-logo">
+                                    <span class="team-name">Taylor Swift - "Midnight Rain"</span>
+                                    <span class="team-score">#1</span>
+                                </div>
+                            </div>
+                            <div class="match-status">3 Weeks at Top</div>
+                        </div>
+                        <div class="score-card">
+                            <div class="match-type">Streaming</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="https://i.pinimg.com/736x/78/17/1d/78171d309ebb461048a6569812c8b9a2.jpg" alt="Show Poster" class="team-logo">
+                                    <span class="team-name">Stranger Things: Final Season</span>
+                                    <span class="team-score">98M</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Views in 24hrs</div>
+                        </div>
+                        <div class="score-card">
+                            <div class="match-type">Awards</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="https://i.pinimg.com/736x/78/17/1d/78171d309ebb461048a6569812c8b9a2.jpg" alt="Oscar" class="team-logo">
+                                    <span class="team-name">Oscar Nominations</span>
+                                    <span class="team-score">Dec 10</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Announcement Date</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Entertainment News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Movies</div>
+                            <!-- <img src="https://via.placeholder.com/800x500" alt="Featured Entertainment News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>James Cameron Announces Revolutionary Filming Technique for Avatar 4</h2>
+                            <p class="excerpt">The visionary director has revealed a groundbreaking underwater motion capture system that will allow actors to perform complex scenes without the need for CGI enhancement, promising an even more immersive experience for viewers.</p>
+                            <div class="article-meta">
+                                <span class="author">By Jessica Williams</span>
+                                <span class="date">May 14, 2025</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Entertainment Categories -->
+            <section class="sports-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Entertainment Categories</h2>
+                    </div>
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All</button>
+                        <button class="category-tab" data-category="movies">Movies</button>
+                        <button class="category-tab" data-category="music">Music</button>
+                        <button class="category-tab" data-category="television">Television</button>
+                        <button class="category-tab" data-category="celebrity">Celebrity</button>
+                        <button class="category-tab" data-category="streaming">Streaming</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Entertainment News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card" data-category="movies">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Christopher Nolan's Next Film to Explore Quantum Physics and Time Perception</h3>
+                                <p class="excerpt">The acclaimed director has begun pre-production on his most ambitious project yet, with filming scheduled to begin in early 2026.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="music">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Adele and Beyoncé Announce Surprise Collaboration Album</h3>
+                                <p class="excerpt">The two powerhouse vocalists have been secretly recording together for the past year, with their joint album set to drop next month.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="television">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>"The Crown" Creator Announces New Historical Drama Series About Ancient Rome</h3>
+                                <p class="excerpt">Peter Morgan's next project will explore the political intrigue and power struggles of the Roman Empire during the reign of Emperor Augustus.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="celebrity">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Ryan Reynolds and Blake Lively Launch Educational Foundation for Underprivileged Children</h3>
+                                <p class="excerpt">The Hollywood power couple has pledged $20 million to establish schools and scholarship programs in underserved communities.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="streaming">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Netflix and Amazon Prime Announce Price Reductions Amid Streaming Wars</h3>
+                                <p class="excerpt">As competition intensifies with Disney+ and HBO Max, major streaming platforms are slashing subscription costs to retain viewers.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="movies">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Marvel Studios Confirms X-Men Reboot with Diverse International Cast</h3>
+                                <p class="excerpt">The highly anticipated relaunch will feature actors from over 12 countries and introduce several mutant characters never before seen on screen.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Celebrity Profiles -->
+            <section class="player-profiles">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Celebrity Spotlights</h2>
+                    </div>
+                    <div class="profiles-grid">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.pinimg.com/736x/48/a3/09/48a30914cf111e805dac86fc385af7f4.jpg" alt="Celebrity Profile">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Zendaya</h3>
+                                <p class="profile-title">Actress & Fashion Icon</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">2</span>
+                                        <span class="stat-label">Emmy Awards</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">15</span>
+                                        <span class="stat-label">Major Films</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">160M</span>
+                                        <span class="stat-label">Instagram Followers</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.pinimg.com/736x/e7/85/3a/e7853a49a903cb2715d8a28c6a1aca5e.jpg" alt="Celebrity Profile">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Timothée Chalamet</h3>
+                                <p class="profile-title">Actor & Producer</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">1</span>
+                                        <span class="stat-label">Oscar Nomination</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">12</span>
+                                        <span class="stat-label">Award-Winning Films</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">28</span>
+                                        <span class="stat-label">Age</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Entertainment Videos -->
+            <section class="sports-videos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Videos</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="videos-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Behind the Scenes: The Making of Dune: Part Three</h3>
+                                <p class="video-duration">12:45</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Exclusive Interview: Meryl Streep on Her 50-Year Career</h3>
+                                <p class="video-duration">18:20</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Top 10 Most Anticipated TV Shows of 2026</h3>
+                                <p class="video-duration">9:35</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Entertainment Newsletter</h2>
+                        <p>Get celebrity interviews, movie reviews, and entertainment news delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/entertainment.js"></script>
+</body>
+</html>

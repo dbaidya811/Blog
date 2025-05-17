@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html" class="active">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Science</h1>
+                    <p>Explore the latest discoveries, research breakthroughs, and scientific advancements from around the world.</p>
+                </div>
+            </section>
+
+            <!-- Science Highlights -->
+            <section class="market-summary">
+                <div class="container">
+                    <h2>Science Highlights</h2>
+                    <div class="market-indicators">
+                        <div class="market-indicator">
+                            <div class="indicator-name">Space Exploration</div>
+                            <div class="indicator-value">Mars Mission</div>
+                            <div class="indicator-change">Launch in 45 days</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Climate Research</div>
+                            <div class="indicator-value">+1.2°C</div>
+                            <div class="indicator-change">Global temperature rise</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Quantum Computing</div>
+                            <div class="indicator-value">1024 Qubits</div>
+                            <div class="indicator-change">New record achieved</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Biodiversity</div>
+                            <div class="indicator-value">15 Species</div>
+                            <div class="indicator-change">Newly discovered this year</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Renewable Energy</div>
+                            <div class="indicator-value">38%</div>
+                            <div class="indicator-change">Of global electricity production</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Science News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Astronomy</div>
+                            <!-- <img src="https://via.placeholder.com/800x500" alt="Featured Science News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>James Webb Space Telescope Discovers Potentially Habitable Exoplanet with Water Vapor</h2>
+                            <p class="excerpt">In a groundbreaking discovery, NASA's James Webb Space Telescope has identified a rocky exoplanet with clear signatures of water vapor in its atmosphere, located just 40 light-years from Earth. Scientists are calling it the most promising candidate yet for potentially habitable worlds beyond our solar system.</p>
+                            <div class="article-meta">
+                                <span class="author">By Dr. Alan Foster</span>
+                                <span class="date">May 14, 2025</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Science Categories -->
+            <section class="sports-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Science Categories</h2>
+                    </div>
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All</button>
+                        <button class="category-tab" data-category="astronomy">Astronomy</button>
+                        <button class="category-tab" data-category="physics">Physics</button>
+                        <button class="category-tab" data-category="environment">Environment</button>
+                        <button class="category-tab" data-category="biology">Biology</button>
+                        <button class="category-tab" data-category="technology">Technology</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Science News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card" data-category="astronomy">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Astronomers Capture First Direct Image of Supermassive Black Hole Jet Formation</h3>
+                                <p class="excerpt">Using a global network of radio telescopes, scientists have imaged the exact moment a black hole launches its powerful relativistic jets, providing crucial insights into these cosmic phenomena.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">6 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="physics">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>CERN's Large Hadron Collider Finds Evidence of Fifth Fundamental Force</h3>
+                                <p class="excerpt">Physicists at CERN have detected anomalies that suggest the existence of a previously unknown force of nature, potentially revolutionizing our understanding of particle physics and the Standard Model.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">7 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="environment">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Novel Carbon Capture Technology Removes CO2 Directly from Atmosphere at Record Efficiency</h3>
+                                <p class="excerpt">A breakthrough direct air capture system developed by international researchers can extract carbon dioxide from ambient air using 70% less energy than previous methods.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="biology">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>CRISPR Gene Editing Successfully Treats Genetic Heart Disease in Human Trial</h3>
+                                <p class="excerpt">For the first time, scientists have used in vivo CRISPR-Cas9 gene editing to correct a mutation causing hypertrophic cardiomyopathy, showing long-term benefits in patients.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">6 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="technology">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Quantum Internet Prototype Demonstrates Secure Communication Across 100 Kilometers</h3>
+                                <p class="excerpt">Researchers have achieved a major milestone in quantum networking by transmitting entangled photons through standard optical fiber over unprecedented distances without signal degradation.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="astronomy">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Science News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Lunar Gateway Space Station Construction Begins with First Module Launch</h3>
+                                <p class="excerpt">NASA and international partners have successfully launched the Power and Propulsion Element, the first component of humanity's first space station in lunar orbit.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scientist Profiles -->
+            <section class="player-profiles">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Leading Scientists</h2>
+                    </div>
+                    <div class="profiles-grid">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <!-- <img src="https://via.placeholder.com/300x400" alt="Scientist Profile"> -->
+                            </div>
+                            <div class="profile-info">
+                                <h3>Dr. Elena Rodriguez</h3>
+                                <p class="profile-title">Quantum Physicist & AI Researcher</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">25+</span>
+                                        <span class="stat-label">Years Research</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">120+</span>
+                                        <span class="stat-label">Publications</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">3</span>
+                                        <span class="stat-label">Major Breakthroughs</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <!-- <img src="https://via.placeholder.com/300x400" alt="Scientist Profile"> -->
+                            </div>
+                            <div class="profile-info">
+                                <h3>Dr. Rajiv Patel</h3>
+                                <p class="profile-title">Climate Scientist & Environmental Engineer</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">18</span>
+                                        <span class="stat-label">Years Research</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">IPCC</span>
+                                        <span class="stat-label">Lead Author</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">4</span>
+                                        <span class="stat-label">Patents</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Science Section -->
+            <section class="interactive-science">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Science Explained</h2>
+                    </div>
+                    <div class="interactive-grid">
+                        <div class="interactive-card">
+                            <div class="interactive-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3>How Quantum Computers Work</h3>
+                            <p>Unlike classical computers that use bits (0s and 1s), quantum computers use quantum bits or "qubits" that can exist in multiple states simultaneously through a phenomenon called superposition.</p>
+                            <div class="interactive-footer">
+                                <a href="#" class="interactive-link">Explore Interactive Model</a>
+                            </div>
+                        </div>
+                        <div class="interactive-card">
+                            <div class="interactive-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h3>CRISPR Gene Editing Simplified</h3>
+                            <p>CRISPR-Cas9 works like molecular scissors that can precisely cut DNA at specific locations, allowing scientists to remove, add, or alter sections of the genetic sequence.</p>
+                            <div class="interactive-footer">
+                                <a href="#" class="interactive-link">View 3D Animation</a>
+                            </div>
+                        </div>
+                        <div class="interactive-card">
+                            <div class="interactive-icon">
+                                <i class="fas fa-meteor"></i>
+                            </div>
+                            <h3>The Scale of the Universe</h3>
+                            <p>From subatomic particles to galaxy superclusters, explore the mind-boggling scale of our universe through this interactive visualization tool.</p>
+                            <div class="interactive-footer">
+                                <a href="#" class="interactive-link">Start Interactive Journey</a>
+                            </div>
+                        </div>
+                        <div class="interactive-card">
+                            <div class="interactive-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>How Neural Networks Learn</h3>
+                            <p>Artificial neural networks mimic the human brain's structure, using layers of interconnected nodes to process information and learn patterns through a process called backpropagation.</p>
+                            <div class="interactive-footer">
+                                <a href="#" class="interactive-link">Try Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Science Videos -->
+            <section class="sports-videos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Videos</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="videos-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Inside CERN: The Hunt for the God Particle</h3>
+                                <p class="video-duration">22:15</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Deep Ocean Exploration: Discovering New Species in the Mariana Trench</h3>
+                                <p class="video-duration">18:40</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>The Future of Fusion Energy: Are We Close to Unlimited Clean Power?</h3>
+                                <p class="video-duration">15:22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Science Newsletter</h2>
+                        <p>Get the latest scientific discoveries, research breakthroughs, and technology updates delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/science.js"></script>
+</body>
+</html>

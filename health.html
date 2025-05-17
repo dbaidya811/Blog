@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html" class="active">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Health</h1>
+                    <p>Stay informed about the latest medical breakthroughs, wellness tips, nutrition advice, and healthcare news.</p>
+                </div>
+            </section>
+
+            <!-- Health Indicators -->
+            <section class="market-summary">
+                <div class="container">
+                    <h2>Health Indicators</h2>
+                    <div class="market-indicators">
+                        <div class="market-indicator">
+                            <div class="indicator-name">COVID-19 Cases</div>
+                            <div class="indicator-value">1,245</div>
+                            <div class="indicator-change down">-15% this week</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Vaccination Rate</div>
+                            <div class="indicator-value">87.5%</div>
+                            <div class="indicator-change up">+0.8% this month</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Air Quality Index</div>
+                            <div class="indicator-value">68</div>
+                            <div class="indicator-change">Moderate</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Flu Activity</div>
+                            <div class="indicator-value">Low</div>
+                            <div class="indicator-change down">Decreasing</div>
+                        </div>
+                        <div class="market-indicator">
+                            <div class="indicator-name">Pollen Count</div>
+                            <div class="indicator-value">High</div>
+                            <div class="indicator-change up">Increasing</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Health News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Medical Research</div>
+                            <!-- <img src="https://via.placeholder.com/800x500" alt="Featured Health News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>Breakthrough in Alzheimer's Research: New Drug Shows Promise in Clinical Trials</h2>
+                            <p class="excerpt">A groundbreaking new treatment has shown significant results in slowing cognitive decline in early-stage Alzheimer's patients, according to researchers at the National Institute of Neurological Disorders. The phase III clinical trials demonstrated a 42% reduction in disease progression over 18 months.</p>
+                            <div class="article-meta">
+                                <span class="author">By Dr. Sarah Johnson</span>
+                                <span class="date">May 14, 2025</span>
+                                <span class="read-time">7 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Health Categories -->
+            <section class="sports-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Health Categories</h2>
+                    </div>
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All</button>
+                        <button class="category-tab" data-category="medical">Medical Research</button>
+                        <button class="category-tab" data-category="wellness">Wellness</button>
+                        <button class="category-tab" data-category="nutrition">Nutrition</button>
+                        <button class="category-tab" data-category="fitness">Fitness</button>
+                        <button class="category-tab" data-category="mental">Mental Health</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card" data-category="medical">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>New Cancer Screening Method Detects Multiple Types with Single Blood Test</h3>
+                                <p class="excerpt">Scientists have developed a revolutionary blood test that can detect up to 50 different types of cancer with high accuracy before symptoms appear.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="wellness">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Study Confirms Link Between Regular Nature Exposure and Reduced Stress Levels</h3>
+                                <p class="excerpt">Spending just 20 minutes daily in natural environments can significantly lower cortisol levels and improve overall mental well-being.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="nutrition">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Mediterranean Diet Linked to Longer Lifespan and Reduced Risk of Chronic Diseases</h3>
+                                <p class="excerpt">A comprehensive 25-year study confirms that adherence to the Mediterranean diet can add up to 13 years to life expectancy and reduce heart disease risk by 30%.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">6 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="fitness">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>High-Intensity Interval Training More Effective Than Traditional Cardio, Research Shows</h3>
+                                <p class="excerpt">New findings suggest that short bursts of intense exercise provide greater cardiovascular benefits and metabolic improvements than longer, moderate workouts.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="mental">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Digital Therapy Applications Show Promising Results for Anxiety and Depression Treatment</h3>
+                                <p class="excerpt">FDA-approved mental health apps demonstrate effectiveness comparable to traditional therapy for mild to moderate conditions, increasing accessibility to treatment.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="medical">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Artificial Intelligence System Outperforms Radiologists in Detecting Early-Stage Lung Cancer</h3>
+                                <p class="excerpt">A deep learning algorithm developed by researchers has achieved 94% accuracy in identifying malignant nodules, potentially revolutionizing early diagnosis.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">6 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health Expert Profiles -->
+            <section class="player-profiles">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Expert Insights</h2>
+                    </div>
+                    <div class="profiles-grid">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.pinimg.com/736x/a9/e0/b8/a9e0b8c94f166721715d091aa240c969.jpg" alt="Health Expert Profile">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Dr. Priya Sharma</h3>
+                                <p class="profile-title">Immunologist & Public Health Specialist</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">20+</span>
+                                        <span class="stat-label">Years Experience</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">45</span>
+                                        <span class="stat-label">Research Papers</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">WHO</span>
+                                        <span class="stat-label">Advisor</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.pinimg.com/736x/36/62/5e/36625e9230276d75ecf02f61fd5315b5.jpg" alt="Health Expert Profile">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Dr. Michael Chen</h3>
+                                <p class="profile-title">Neuroscientist & Mental Health Researcher</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">15+</span>
+                                        <span class="stat-label">Years Experience</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">3</span>
+                                        <span class="stat-label">Books Published</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">TED</span>
+                                        <span class="stat-label">Speaker</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health Tips Section -->
+            <section class="health-tips">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Daily Health Tips</h2>
+                    </div>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Heart Health</h3>
+                            <p>Aim for 30 minutes of moderate exercise at least 5 days a week to maintain cardiovascular health and reduce heart disease risk.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Mental Wellness</h3>
+                            <p>Practice mindfulness meditation for 10 minutes daily to improve focus, reduce anxiety, and enhance emotional regulation.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h3>Nutrition</h3>
+                            <p>Include at least 5 servings of different colored fruits and vegetables daily to ensure a wide range of essential nutrients and antioxidants.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <h3>Sleep Quality</h3>
+                            <p>Maintain a consistent sleep schedule and aim for 7-9 hours of quality sleep to support immune function and cognitive performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health Videos -->
+            <section class="sports-videos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Videos</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="videos-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Understanding the Gut-Brain Connection: How Your Diet Affects Mental Health</h3>
+                                <p class="video-duration">14:25</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>5 Evidence-Based Exercises to Improve Posture and Reduce Back Pain</h3>
+                                <p class="video-duration">10:15</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>The Science of Aging: How to Slow Down the Biological Clock</h3>
+                                <p class="video-duration">18:40</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Health Newsletter</h2>
+                        <p>Get weekly health tips, medical updates, and wellness advice delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/health.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News - Latest News Updates</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Breaking News Ticker -->
+            <div class="breaking-news">
+                <div class="container">
+                    <div class="breaking-label">Breaking News</div>
+                    <div class="breaking-content">
+                        <div class="ticker-wrapper">
+                            <div class="ticker-item">Global tech conference announces breakthrough in renewable energy storage</div>
+                            <div class="ticker-item">Major sporting event postponed due to weather concerns</div>
+                            <div class="ticker-item">New healthcare policy to be implemented nationwide next month</div>
+                            <div class="ticker-item">Stock markets reach record highs amid economic recovery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured News Section -->
+            <section class="featured-news">
+                <div class="container">
+                    <div class="main-featured">
+                        <article class="featured-card large">
+                            <div class="featured-img">
+                                <div class="category-tag">Technology</div>
+                                <!-- <img src="https://i.pinimg.com/736x/83/41/b5/8341b55981ab455c7fa981598c27e81d.jpg" alt="Featured News"> -->
+                            </div>
+                            <div class="featured-content">
+                                <h2>Breakthrough in AI Technology Promises to Revolutionize Healthcare</h2>
+                                <p class="excerpt">New artificial intelligence system can predict patient outcomes with unprecedented accuracy, potentially saving thousands of lives annually.</p>
+                                <div class="article-meta">
+                                    <span class="author">By John Smith</span>
+                                    <span class="date">May 15, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read Full Story</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="secondary-featured">
+                        <article class="featured-card">
+                            <div class="featured-img">
+                                <div class="category-tag">Politics</div>
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Politics News"> -->
+                            </div>
+                            <div class="featured-content">
+                                <h3>New International Agreement on Climate Change Signed by 195 Nations</h3>
+                                <div class="article-meta">
+                                    <span class="date">May 14, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="featured-card">
+                            <div class="featured-img">
+                                <div class="category-tag">Business</div>
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="featured-content">
+                                <h3>Global Markets Respond Positively to New Economic Policies</h3>
+                                <div class="article-meta">
+                                    <span class="date">May 14, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest News Section -->
+            <section class="latest-news">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Latest News</h2>
+                        <a href="latest.html" class="view-all">View All</a>
+                    </div>
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-img">
+                                <div class="category-tag">Sports</div>
+                                <!-- <img src="https://i.pinimg.com/736x/6b/03/fb/6b03fb88fb5c044c0b22df7b12f6f9d1.jpg" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>National Team Secures Spot in World Championship Finals</h3>
+                                <p class="excerpt">After a thrilling semifinal match, the national team advances to the finals for the first time in a decade.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <div class="category-tag">Technology</div>
+                                <!-- <img src="https://i.pinimg.com/736x/84/bd/53/84bd533f4c621c654141f925d0cd8afa.jpg" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>New Smartphone Features Groundbreaking Battery Technology</h3>
+                                <p class="excerpt">Latest flagship device promises a week of battery life on a single charge, setting new industry standards.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <div class="category-tag">Health</div>
+                                <!-- <img src="https://i.pinimg.com/736x/9b/4f/b0/9b4fb0f3341a2ab3fdb0267691b552eb.jpg" alt="Health News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Study Reveals New Benefits of Mediterranean Diet</h3>
+                                <p class="excerpt">Comprehensive research shows additional health benefits beyond heart health, including improved cognitive function.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <div class="category-tag">Entertainment</div>
+                                <!-- <img src="https://i.pinimg.com/736x/e8/a2/7e/e8a27e6aa8b120518b58f1019c53412f.jpg" alt="Entertainment News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Highly Anticipated Film Breaks Opening Weekend Records</h3>
+                                <p class="excerpt">The blockbuster exceeded expectations with unprecedented global box office numbers in its first weekend.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Categories Section -->
+            <section class="popular-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Popular Categories</h2>
+                    </div>
+                    <div class="categories-grid">
+                        <a href="technology.html" class="category-card">
+                            <div class="category-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Technology</h3>
+                            <p>Latest tech news and innovations</p>
+                        </a>
+                        <a href="business.html" class="category-card">
+                            <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Business</h3>
+                            <p>Market updates and economic trends</p>
+                        </a>
+                        <a href="sports.html" class="category-card">
+                            <div class="category-icon"><i class="fas fa-futbol"></i></div>
+                            <h3>Sports</h3>
+                            <p>Coverage of all major sporting events</p>
+                        </a>
+                        <a href="entertainment.html" class="category-card">
+                            <div class="category-icon"><i class="fas fa-film"></i></div>
+                            <h3>Entertainment</h3>
+                            <p>Celebrity news and media updates</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with the latest news delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

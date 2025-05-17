@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html" class="active">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Technology</h1>
+                    <p>Discover the latest innovations, gadgets, and digital trends shaping our future.</p>
+                </div>
+            </section>
+
+            <!-- Featured Technology News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Technology</div>
+                            <!-- <img src="https://via.placeholder.com/800x500" alt="Featured Technology News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>Breakthrough in AI Technology Promises to Revolutionize Healthcare</h2>
+                            <p class="excerpt">New artificial intelligence system can predict patient outcomes with unprecedented accuracy, potentially saving thousands of lives annually by identifying high-risk patients before symptoms worsen.</p>
+                            <div class="article-meta">
+                                <span class="author">By John Smith</span>
+                                <span class="date">May 15, 2025</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Technology News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>New Smartphone Features Groundbreaking Battery Technology</h3>
+                                <p class="excerpt">Latest flagship device promises a week of battery life on a single charge, setting new industry standards.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Quantum Computing Breakthrough Could Transform Data Security</h3>
+                                <p class="excerpt">Researchers achieve stable quantum entanglement at room temperature, bringing practical quantum computing closer to reality.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">6 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Electric Vehicle Charging Network Expands Nationwide</h3>
+                                <p class="excerpt">Major infrastructure project adds 10,000 new fast-charging stations, addressing range anxiety concerns for EV owners.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Virtual Reality Education Platform Launches for Global Classrooms</h3>
+                                <p class="excerpt">Innovative VR system allows students worldwide to attend virtual lectures and collaborate in immersive learning environments.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Wearable Health Monitors Receive FDA Approval for Medical Diagnostics</h3>
+                                <p class="excerpt">Next-generation smartwatches can now officially diagnose certain conditions, blurring the line between consumer gadgets and medical devices.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Technology News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Cybersecurity Experts Warn of Sophisticated New Ransomware Threat</h3>
+                                <p class="excerpt">Organizations urged to update security protocols as AI-powered malware demonstrates ability to evade traditional detection methods.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with the latest technology news delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

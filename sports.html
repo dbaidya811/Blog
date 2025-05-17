@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html" class="active">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Sports</h1>
+                    <p>Stay updated with the latest sports news, match results, player profiles, and exclusive interviews.</p>
+                </div>
+            </section>
+
+            <!-- Live Scores -->
+            <section class="live-scores">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Live Scores</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="scores-slider">
+                        <div class="score-card cricket">
+                            <div class="match-type">Cricket - IPL</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">Mumbai Indians</span>
+                                    <span class="team-score">186/4</span>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">Chennai Super Kings</span>
+                                    <span class="team-score">142/8</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Mumbai Indians won by 44 runs</div>
+                        </div>
+                        <div class="score-card football">
+                            <div class="match-type">Football - Premier League</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">Manchester United</span>
+                                    <span class="team-score">2</span>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">Liverpool</span>
+                                    <span class="team-score">1</span>
+                                </div>
+                            </div>
+                            <div class="match-status live">LIVE - 78'</div>
+                        </div>
+                        <div class="score-card tennis">
+                            <div class="match-type">Tennis - French Open</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Player" class="team-logo"> -->
+                                    <span class="team-name">Rafael Nadal</span>
+                                    <span class="team-score">6, 7, 5</span>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Player" class="team-logo"> -->
+                                    <span class="team-name">Novak Djokovic</span>
+                                    <span class="team-score">4, 6, 7</span>
+                                </div>
+                            </div>
+                            <div class="match-status live">LIVE - 4th Set</div>
+                        </div>
+                        <div class="score-card basketball">
+                            <div class="match-type">Basketball - NBA</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">LA Lakers</span>
+                                    <span class="team-score">112</span>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="team">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Team Logo" class="team-logo"> -->
+                                    <span class="team-name">Boston Celtics</span>
+                                    <span class="team-score">108</span>
+                                </div>
+                            </div>
+                            <div class="match-status">Final</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Sports News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Cricket</div>
+                            <!-- <img src="https://via.placeholder.com/800x500" alt="Featured Sports News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>India Clinches Historic Test Series Victory Against Australia</h2>
+                            <p class="excerpt">In a thrilling final day of the fourth Test match, India chased down a challenging target of 328 runs to secure a memorable series win at the Gabba, ending Australia's 32-year unbeaten streak at the venue.</p>
+                            <div class="article-meta">
+                                <span class="author">By Rahul Sharma</span>
+                                <span class="date">May 14, 2025</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sports Categories -->
+            <section class="sports-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Sports Categories</h2>
+                    </div>
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All</button>
+                        <button class="category-tab" data-category="cricket">Cricket</button>
+                        <button class="category-tab" data-category="football">Football</button>
+                        <button class="category-tab" data-category="tennis">Tennis</button>
+                        <button class="category-tab" data-category="basketball">Basketball</button>
+                        <button class="category-tab" data-category="other">Other Sports</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sports News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card" data-category="cricket">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Virat Kohli Steps Down as T20 Captain, Focuses on Test and ODI Leadership</h3>
+                                <p class="excerpt">The star batsman announced his decision to relinquish T20 captaincy after the upcoming World Cup to manage workload and focus on Test and ODI formats.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="football">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Manchester City Secures Fifth Premier League Title in Six Years</h3>
+                                <p class="excerpt">Pep Guardiola's side clinched the title with a decisive 3-1 victory over Arsenal in the penultimate match of the season.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="tennis">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Rising Star Alcaraz Claims First Grand Slam Title at French Open</h3>
+                                <p class="excerpt">The 22-year-old Spanish sensation defeated the world number one in a five-set thriller to announce his arrival on the biggest stage.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="basketball">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>LeBron James Breaks All-Time NBA Scoring Record in Lakers Victory</h3>
+                                <p class="excerpt">The legendary forward surpassed Kareem Abdul-Jabbar's long-standing record with a signature fadeaway jumper in the third quarter.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="other">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Olympic Committee Announces New Sports for 2028 Los Angeles Games</h3>
+                                <p class="excerpt">Cricket, squash, and lacrosse will make their Olympic debuts, while breakdancing returns after its successful introduction in Paris 2024.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="cricket">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Sports News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>IPL Auction Breaks Records as Teams Spend Big on International Talent</h3>
+                                <p class="excerpt">The auction saw unprecedented spending with several players fetching over $2 million as franchises bolster their squads for the upcoming season.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Player Profiles -->
+            <section class="player-profiles">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Player Spotlights</h2>
+                    </div>
+                    <div class="profiles-grid">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <!-- <img src="https://via.placeholder.com/300x400" alt="Player Profile"> -->
+                            </div>
+                            <div class="profile-info">
+                                <h3>Rohit Sharma</h3>
+                                <p class="profile-title">Cricket - Indian Captain</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">12,450</span>
+                                        <span class="stat-label">ODI Runs</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">45</span>
+                                        <span class="stat-label">Centuries</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">264</span>
+                                        <span class="stat-label">Highest Score</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <!-- <img src="https://via.placeholder.com/300x400" alt="Player Profile"> -->
+                            </div>
+                            <div class="profile-info">
+                                <h3>Lionel Messi</h3>
+                                <p class="profile-title">Football - Inter Miami</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">800+</span>
+                                        <span class="stat-label">Career Goals</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">8</span>
+                                        <span class="stat-label">Ballon d'Or</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">1</span>
+                                        <span class="stat-label">World Cup</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="profile-link">View Full Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sports Videos -->
+            <section class="sports-videos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Videos</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="videos-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Top 10 Goals of the Premier League Season</h3>
+                                <p class="video-duration">8:45</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Exclusive Interview: Virat Kohli on Leadership and Legacy</h3>
+                                <p class="video-duration">15:20</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>The Rise of Women's Sports: Breaking Barriers</h3>
+                                <p class="video-duration">12:35</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Sports Newsletter</h2>
+                        <p>Get match updates, player interviews, and expert analysis delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/sports.js"></script>
+</body>
+</html>

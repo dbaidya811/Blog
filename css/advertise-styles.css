@@ -1,0 +1,449 @@
+/* Advertise Page Styles */
+
+/* Hero Section */
+.advertise-hero {
+    background: linear-gradient(rgba(var(--primary-color-rgb), 0.8), rgba(var(--accent-color-rgb), 0.8)), url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.advertise-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.advertise-hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    color: var(--accent-color);
+}
+
+/* Stats Section */
+.advertise-stats {
+    margin: 50px 0;
+}
+
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.stat-card {
+    flex: 1 1 200px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    max-width: 250px;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* Audience Section */
+.advertise-audience {
+    margin: 70px 0;
+    background-color: var(--bg-light);
+    padding: 50px 0;
+    border-radius: 8px;
+}
+
+.audience-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.audience-chart {
+    flex: 1 1 400px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.audience-chart h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-primary);
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 250px;
+}
+
+.chart-bar {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bar-fill {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px 4px 0 0;
+    transition: height 1s ease;
+}
+
+.bar-label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Options Section */
+.advertise-options {
+    margin: 70px 0;
+}
+
+.options-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.option-card {
+    flex: 1 1 250px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.option-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.option-icon i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.option-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.option-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.option-features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 25px;
+}
+
+.option-features li:last-child {
+    border-bottom: none;
+}
+
+.option-features li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.advertise-testimonials {
+    margin: 70px 0;
+    background-color: var(--bg-light);
+    padding: 50px 0;
+    border-radius: 8px;
+}
+
+.testimonials-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    flex: 1 1 300px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 20px;
+}
+
+.testimonial-content p:before,
+.testimonial-content p:after {
+    content: '"';
+    font-size: 50px;
+    color: rgba(var(--primary-color-rgb), 0.2);
+    position: absolute;
+    line-height: 0;
+}
+
+.testimonial-content p:before {
+    top: 15px;
+    left: 0;
+}
+
+.testimonial-content p:after {
+    bottom: -5px;
+    right: 0;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-info h4 {
+    margin: 0 0 5px 0;
+    color: var(--text-primary);
+}
+
+.author-info p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Media Kit Section */
+.media-kit {
+    margin: 70px 0;
+}
+
+.media-kit-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.media-kit-text {
+    flex: 1 1 400px;
+}
+
+.media-kit-text h2 {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.media-kit-text p {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.download-button i {
+    margin-right: 8px;
+}
+
+.media-kit-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.media-kit-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Advertise FAQ Section */
+.advertise-faq {
+    margin: 70px 0;
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .audience-chart,
+[data-theme="dark"] .option-card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .media-kit-content {
+    background-color: var(--bg-dark-secondary);
+}
+
+[data-theme="dark"] .option-icon {
+    background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* Animation for Chart Bars */
+@keyframes bar-rise {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--target-height);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .advertise-hero {
+        padding: 70px 0;
+    }
+    
+    .advertise-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .advertise-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .stats-grid,
+    .audience-charts,
+    .options-grid,
+    .testimonials-slider {
+        gap: 20px;
+    }
+    
+    .stat-card {
+        padding: 20px 15px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .audience-chart,
+    .option-card,
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .chart-container {
+        height: 200px;
+    }
+    
+    .option-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .option-icon i {
+        font-size: 24px;
+    }
+    
+    .media-kit-content {
+        padding: 30px 20px;
+    }
+}

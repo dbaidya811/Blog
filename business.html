@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business - Daily News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content hidden">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="date-weather">
+                        <div class="current-date">Thursday, May 15, 2025</div>
+                        <div class="weather">28°C New Delhi</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Daily News</h1>
+                        <p class="tagline">Your Source for Reliable Information</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search news...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="theme-toggle">
+                            <button id="theme-toggle-btn">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="politics.html">Politics</a></li>
+                        <li><a href="business.html" class="active">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="science.html">Science</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Category Header -->
+            <section class="category-header">
+                <div class="container">
+                    <h1>Business</h1>
+                    <p>Stay informed with the latest business news, market updates, and economic trends.</p>
+                </div>
+            </section>
+
+            <!-- Market Summary -->
+            <section class="market-summary">
+                <div class="container">
+                    <h2>Market Summary</h2>
+                    <div class="market-indicators">
+                        <div class="market-indicator up">
+                            <div class="indicator-name">SENSEX</div>
+                            <div class="indicator-value">82,450.56</div>
+                            <div class="indicator-change">+456.23 (+0.56%)</div>
+                        </div>
+                        <div class="market-indicator up">
+                            <div class="indicator-name">NIFTY</div>
+                            <div class="indicator-value">24,876.32</div>
+                            <div class="indicator-change">+132.45 (+0.54%)</div>
+                        </div>
+                        <div class="market-indicator down">
+                            <div class="indicator-name">USD/INR</div>
+                            <div class="indicator-value">74.32</div>
+                            <div class="indicator-change">-0.15 (-0.20%)</div>
+                        </div>
+                        <div class="market-indicator up">
+                            <div class="indicator-name">GOLD</div>
+                            <div class="indicator-value">₹58,750</div>
+                            <div class="indicator-change">+350 (+0.60%)</div>
+                        </div>
+                        <div class="market-indicator down">
+                            <div class="indicator-name">CRUDE OIL</div>
+                            <div class="indicator-value">$78.45</div>
+                            <div class="indicator-change">-1.23 (-1.54%)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Business News -->
+            <section class="category-featured">
+                <div class="container">
+                    <article class="featured-card large">
+                        <div class="featured-img">
+                            <div class="category-tag">Business</div>
+                            <!-- <img src="https://i.pinimg.com/736x/53/55/8c/53558c5d898447dfcc9a50f3883c1c0c.jpg" alt="Featured Business News"> -->
+                        </div>
+                        <div class="featured-content">
+                            <h2>Global Markets Respond Positively to New Economic Policies</h2>
+                            <p class="excerpt">Stock markets worldwide rallied as major economies announced coordinated fiscal measures aimed at boosting growth and addressing inflation concerns. Investors responded favorably to the new policy framework that balances economic stimulus with inflation control.</p>
+                            <div class="article-meta">
+                                <span class="author">By Robert Chen</span>
+                                <span class="date">May 14, 2025</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <a href="article.html" class="read-more">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Business News Categories -->
+            <section class="business-categories">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Business Categories</h2>
+                    </div>
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All</button>
+                        <button class="category-tab" data-category="markets">Markets</button>
+                        <button class="category-tab" data-category="companies">Companies</button>
+                        <button class="category-tab" data-category="economy">Economy</button>
+                        <button class="category-tab" data-category="startups">Startups</button>
+                        <button class="category-tab" data-category="finance">Finance</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business News Grid -->
+            <section class="category-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <article class="news-card" data-category="companies">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Tech Giant Announces Major Expansion into Emerging Markets</h3>
+                                <p class="excerpt">The company plans to invest $5 billion over the next three years to build data centers and research facilities across Southeast Asia and Africa.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 13, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="economy">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Central Bank Maintains Interest Rates Amid Economic Growth</h3>
+                                <p class="excerpt">The decision comes as inflation shows signs of stabilizing while economic indicators point to sustained growth in key sectors.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 12, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="startups">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Fintech Startup Secures $200 Million in Series C Funding</h3>
+                                <p class="excerpt">The company, which specializes in blockchain-based payment solutions, plans to use the funding to expand into 15 new markets.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 11, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="markets">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Commodity Prices Surge as Supply Chain Constraints Persist</h3>
+                                <p class="excerpt">Prices for key industrial metals and agricultural products have risen sharply, impacting manufacturing costs and consumer goods.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 10, 2025</span>
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="finance">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Major Banks Announce Joint Initiative for Sustainable Finance</h3>
+                                <p class="excerpt">The coalition pledges $500 billion for green projects and commits to phase out financing for high-carbon industries by 2030.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 9, 2025</span>
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                        <article class="news-card" data-category="companies">
+                            <div class="news-img">
+                                <!-- <img src="https://via.placeholder.com/400x250" alt="Business News"> -->
+                            </div>
+                            <div class="news-content">
+                                <h3>Automotive Industry Leader Unveils Plans for Electric Vehicle Hub</h3>
+                                <p class="excerpt">The $3 billion manufacturing facility will create 5,000 jobs and aims to produce 500,000 electric vehicles annually by 2028.</p>
+                                <div class="article-meta">
+                                    <span class="date">May 8, 2025</span>
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                                <a href="article.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Analysis -->
+            <section class="business-analysis">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Expert Analysis</h2>
+                    </div>
+                    <div class="analysis-grid">
+                        <article class="analysis-card">
+                            <div class="analyst-info">
+                                <img src="https://i.pinimg.com/736x/95/56/6c/95566c75b1588de1e6bd1591fe0419db.jpg" alt="Analyst" class="analyst-img">
+                                <div class="analyst-details">
+                                    <h3 class="analyst-name">Dr. Vikram Mehta</h3>
+                                    <p class="analyst-title">Chief Economist</p>
+                                </div>
+                            </div>
+                            <div class="analysis-content">
+                                <h3>The Future of Global Trade in a Post-Pandemic World</h3>
+                                <p class="analysis-excerpt">As economies recover from pandemic disruptions, new trade patterns are emerging that could reshape global commerce for decades to come.</p>
+                                <a href="#" class="read-more">Read Analysis</a>
+                            </div>
+                        </article>
+                        <article class="analysis-card">
+                            <div class="analyst-info">
+                                <img src="https://i.pinimg.com/736x/4c/2c/15/4c2c15a6a087c8c8aba8fc2f3c20cdcc.jpg" alt="Analyst" class="analyst-img">
+                                <div class="analyst-details">
+                                    <h3 class="analyst-name">Sophia Rodriguez</h3>
+                                    <p class="analyst-title">Investment Strategist</p>
+                                </div>
+                            </div>
+                            <div class="analysis-content">
+                                <h3>Navigating Market Volatility: Investment Strategies for 2025</h3>
+                                <p class="analysis-excerpt">With increasing market uncertainty, diversification and sector-specific approaches become crucial for investors seeking stable returns.</p>
+                                <a href="#" class="read-more">Read Analysis</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Videos -->
+            <section class="business-videos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Videos</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="videos-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Quarterly Economic Outlook: Trends and Predictions</h3>
+                                <p class="video-duration">15:24</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Interview: CEO Discusses Company's Expansion Strategy</h3>
+                                <p class="video-duration">12:38</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <!-- <img src="https://via.placeholder.com/350x200" alt="Video Thumbnail"> -->
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>The Rise of Sustainable Investing: Expert Panel Discussion</h3>
+                                <p class="video-duration">28:45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination-section">
+                <div class="container">
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Business Newsletter</h2>
+                        <p>Get daily market updates and business insights delivered directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>Daily News is committed to delivering accurate, unbiased news coverage from around the world. Our team of experienced journalists works tirelessly to bring you the stories that matter.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="politics.html">Politics</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                <li><a href="technology.html">Technology</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="entertainment.html">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="advertise.html">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Connect With Us</h3>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> contact@dailynews.com</p>
+                                <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Daily News. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/business.js"></script>
+</body>
+</html>

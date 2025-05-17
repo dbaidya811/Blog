@@ -1,0 +1,538 @@
+/* Category-specific styles for the news blog */
+
+/* Market Summary Section Styles */
+.market-summary {
+    background-color: var(--bg-light);
+    padding: 30px 0;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.market-indicators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.market-indicator {
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.market-indicator.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.market-indicator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.market-indicator.up .indicator-change {
+    color: #28a745;
+}
+
+.market-indicator.down .indicator-change {
+    color: #dc3545;
+}
+
+.indicator-name {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.indicator-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.indicator-change {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Live Scores Section Styles */
+.live-scores {
+    margin: 30px 0;
+}
+
+.scores-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+}
+
+.scores-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scores-slider::-webkit-scrollbar-track {
+    background: var(--bg-light);
+    border-radius: 10px;
+}
+
+.scores-slider::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.scores-slider.active {
+    cursor: grabbing;
+}
+
+.score-card {
+    min-width: 280px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid #ccc;
+}
+
+.score-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.score-card.cricket {
+    border-top-color: #0073b7;
+}
+
+.score-card.football {
+    border-top-color: #28a745;
+}
+
+.score-card.tennis {
+    border-top-color: #fd7e14;
+}
+
+.score-card.basketball {
+    border-top-color: #dc3545;
+}
+
+.match-type {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.team-name {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.team-score {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.vs {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 5px 0;
+}
+
+.match-status {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+}
+
+.match-status.live {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+/* Category Tabs Styles */
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.category-tab {
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+}
+
+.category-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Player Profiles Styles */
+.player-profiles {
+    margin: 40px 0;
+    background-color: var(--bg-light);
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.profiles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.profile-card {
+    flex: 1 1 300px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.profile-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-card:hover .profile-img img {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.profile-title {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+    background-color: var(--primary-color-dark);
+    transform: translateY(-2px);
+}
+
+/* Expert Analysis Styles */
+.business-analysis {
+    margin: 40px 0;
+}
+
+.analysis-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.analysis-card {
+    flex: 1 1 400px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.analysis-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.analyst-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.analyst-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.analyst-name {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.analyst-title {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.analysis-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.analysis-excerpt {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Videos Styles */
+.business-videos, .sports-videos {
+    margin: 40px 0;
+}
+
+.videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-card {
+    flex: 1 1 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-thumbnail {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.play-button.hover {
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.video-card:hover .video-info h3 {
+    color: var(--primary-color);
+}
+
+.video-duration {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .market-indicator {
+    background-color: var(--bg-dark-secondary);
+}
+
+[data-theme="dark"] .score-card,
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .analysis-card {
+    background-color: var(--bg-dark-secondary);
+}
+
+[data-theme="dark"] .category-tab {
+    background-color: var(--bg-dark-secondary);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .category-tab:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .match-status {
+    background-color: var(--bg-dark-secondary);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .match-status.live {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #ff6b6b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .market-indicators,
+    .profiles-grid,
+    .analysis-grid,
+    .videos-grid {
+        gap: 15px;
+    }
+    
+    .profile-img {
+        height: 200px;
+    }
+    
+    .profile-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .stat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .category-tabs {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    .category-tab {
+        white-space: nowrap;
+    }
+}
